@@ -2,31 +2,39 @@
     outline: 1px solid --tomato;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .Wrap {
     min-width: 1900px;
 }
 
 #header {
+    display: flex;
     line-height: 100px;
-    border-top: 3px solid tomato;
+    padding: 0 50px;
 }
 
-#header .inner {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
+#header h1 {
+    flex: 1;
+    font-size: 0;
+}
+
+#header .link {
+    flex: 1;
+    text-align: right;
 }
 
 #header .gnb>ul {
     display: flex;
-    gap: 60px;
+    gap: 30px;
+    width: 1200px;
 }
 
 #header .gnb>ul a {
     display: block;
 }
-
 
 
 
@@ -85,6 +93,11 @@
 .mainContent .inner figure {
     flex: 1;
 }
+
+.mainContent .inner figure img {
+    width: 100%;
+}
+
 
 #footer {
     background: #333;
